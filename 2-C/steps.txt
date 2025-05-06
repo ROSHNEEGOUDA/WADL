@@ -1,0 +1,29 @@
+
+
+Install Node.js and npm:
+
+    Ensure that Node.js and npm (Node Package Manager) are installed on your system. You can download them from the official Node.js website. npm is usually included with Node.js.
+
+Install Angular CLI:
+
+    Open your terminal and install the Angular CLI (Command Line Interface) globally using npm. This will allow you to use Angular-specific commands.
+
+    npm install -g @angular/cli
+
+Navigate to the Project Directory:
+
+    Use the cd command to navigate to the directory where your angular.json and package.json files are located.
+
+Install Dependencies:
+
+    Run npm install to install all the necessary dependencies defined in your package.json file. This will download and install all the required libraries and packages for your Angular project.
+
+Build the Application:
+
+    Use the Angular CLI to build the application. This will compile the Angular code into static files that can be served by a web server.
+
+	ng build --configuration production
+
+The --configuration production flag optimizes the build for production, including minification and other optimizations. The output will be placed in the dist/demo directory.
+
+    Run npm start

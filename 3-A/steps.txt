@@ -1,0 +1,38 @@
+📌 Step 1: Initialize a Node.js Project
+
+Open a terminal and create a project folder:
+
+    mkdir node-static-server
+    cd node-static-server
+    npm init -y
+
+This creates a package.json file.
+📌 Step 2: Install Express.js
+
+Run the following command:
+
+    npm install express
+
+📌 Step 3: Create the Server
+
+Create a new file named server.js and add the following code:
+
+📌 Step 4: Create a Static Website
+
+Inside the project folder, create a public directory:
+
+    mkdir public
+
+Now, create an index.html file inside public/:
+
+📌 Step 5: Run the Server
+
+Start the server using:
+
+    node server.js
+
+🌍 Access the Website
+
+Open your browser and visit:
+
+    http://localhost:3000   

@@ -1,0 +1,88 @@
+Backend Documentation
+Project Structure
+
+backend/
+├── config/
+│   └── db.js
+├── controllers/
+│   └── userController.js
+├── middleware/
+│   └── authMiddleware.js
+├── models/
+│   └── userModel.js
+├── routes/
+│   └── userRoutes.js
+├── .env
+├── package.json
+└── server.js
+
+API Endpoints
+
+    User Registration
+        POST /api/users/register
+        Body: { name, email, password }
+
+    User Login
+        POST /api/users/login
+        Body: { email, password }
+
+    Get User Profile
+        GET /api/users/profile
+        Protected Route (Requires JWT Token)
+
+    Update User Profile
+        PUT /api/users/profile
+        Protected Route (Requires JWT Token)
+        Body: { name, email, password }
+
+Implementation Steps (Backend)
+
+    Create a new directory for backend and initialize:
+
+mkdir backend
+cd backend
+npm init -y
+
+    Install required dependencies:
+
+npm install express mongoose dotenv bcryptjs jsonwebtoken cors
+
+    Create MongoDB Atlas account and get connection string
+
+    Set up environment variables in .env:
+
+MONGODB_URI=your_mongodb_connection_string
+JWT_SECRET=your_jwt_secret
+PORT=5000
+
+    Implement the server, models, controllers, and routes as per the structure above
+
+Frontend Documentation
+
+We already have a React frontend set up. Here's what we need to add:
+Components Structure
+
+src/
+├── components/
+│   ├── Auth/
+│   │   ├── Login.tsx
+│   │   └── Register.tsx
+│   ├── Profile/
+│   │   └── Profile.tsx
+│   └── Layout/
+│       └── Navbar.tsx
+├── context/
+│   └── AuthContext.tsx
+├── services/
+│   └── api.ts
+└── types/
+    └── user.ts
+
+Implementation Steps (Frontend)
+
+    Create necessary types for TypeScript
+    Implement authentication context
+    Create API service for backend communication
+    Build authentication components (Login/Register)
+    Create protected Profile component
+    Add navigation and layout components

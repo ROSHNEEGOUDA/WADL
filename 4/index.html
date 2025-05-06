@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Simple Mobile App</title>
+
+  <!-- jQuery Mobile CSS -->
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+
+  <!-- jQuery and jQuery Mobile JS -->
+  <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+  <style>
+    /* Custom Styling */
+    .ui-page {
+      background: linear-gradient(to bottom right, #ffffff, #dfe9f3);
+      font-family: 'Helvetica Neue', sans-serif;
+    }
+
+    .ui-header, .ui-footer {
+      background-color: #007bff !important;
+      color: white !important;
+      border: none;
+    }
+
+    .ui-header h1, .ui-footer h4 {
+      font-size: 1.3em;
+      text-align: center;
+    }
+
+    .ui-btn {
+      background-color: #28a745 !important;
+      border: none;
+      color: white !important;
+      border-radius: 8px;
+      text-shadow: none;
+    }
+
+    .ui-content {
+      padding: 20px;
+    }
+
+    label {
+      font-weight: bold;
+    }
+
+    input[type="text"] {
+      padding: 8px;
+      font-size: 1em;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Home Page -->
+<div data-role="page" id="home">
+
+  <div data-role="header">
+    <h1>My App</h1>
+  </div>
+
+  <div role="main" class="ui-content">
+    <p>Welcome to our simple mobile app!</p>
+    <a href="#form" class="ui-btn">Go to Form</a>
+  </div>
+
+  <div data-role="footer" data-position="fixed">
+    <h4>© 2025 My Mobile App</h4>
+  </div>
+
+</div>
+
+<!-- Form Page -->
+<div data-role="page" id="form">
+
+  <div data-role="header">
+    <h1>User Form</h1>
+  </div>
+
+  <div role="main" class="ui-content">
+    <form id="userForm">
+      <label for="name">Enter your name:</label>
+      <input type="text" name="name" id="name" placeholder="John Doe">
+      <a href="#result" class="ui-btn" id="submitBtn">Submit</a>
+    </form>
+  </div>
+
+  <div data-role="footer" data-position="fixed">
+    <h4>Back to Home</h4>
+  </div>
+
+</div>
+
+<!-- Result Page -->
+<div data-role="page" id="result">
+
+  <div data-role="header">
+    <h1>Result</h1>
+  </div>
+
+  <div role="main" class="ui-content">
+    <p id="greeting">Hello!</p>
+    <a href="#home" class="ui-btn">Home</a>
+  </div>
+
+  <div data-role="footer" data-position="fixed">
+    <h4>Thanks for using our app!</h4>
+  </div>
+
+</div>
+
+<script>
+  $('#submitBtn').on('click', function () {
+    const name = $('#name').val().trim();
+    $('#greeting').text(`Hello, ${name || 'Guest'}!`);
+  });
+</script>
+
+</body>
+</html>

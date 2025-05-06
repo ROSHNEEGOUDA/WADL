@@ -1,0 +1,85 @@
+Git Repository Setup Guide
+
+This repository contains instructions on how to set up a Git repository and push it to GitHub.
+
+🚀 Getting Started
+
+Follow the steps below to initialize a Git repository, commit files, and push them to GitHub.
+
+📌 Prerequisites
+
+Git installed on your system. Download from git-scm.com.
+
+A GitHub account (Sign up).
+
+📚 Steps to Set Up Git Repository
+
+1️⃣ Create a New Repository on GitHub
+
+Go to GitHub and create a new repository.
+
+Do not initialize with a README, .gitignore, or license.
+
+2️⃣ Open Terminal or Git Bash
+
+Navigate to your project folder:
+
+cd /path/to/your/project  
+
+3️⃣ Initialize Git in Your Project
+
+git init -b main  
+
+This initializes a new Git repository with main as the default branch.
+
+4️⃣ Stage and Commit Files
+
+git add .  
+git commit -m "Initial commit"  
+
+Stages all files and commits them with a message.
+
+5️⃣ Link Local Repository to GitHub
+
+git remote add origin <REMOTE_URL>  
+git remote -v  # Verify remote URL  
+
+Replace <REMOTE_URL> with the GitHub repository link.
+
+6️⃣ Push Your Code to GitHub
+
+git push -u origin main  
+
+Uploads your project to GitHub.
+
+🎯 Additional Git Commands
+
+Command
+
+Description
+
+git status
+
+Check the current state of your repository.
+
+git log
+
+View commit history.
+
+git branch
+
+List branches in your repository.
+
+git checkout -b new-branch
+
+Create and switch to a new branch.
+
+git pull origin main
+
+Pull latest changes from GitHub.
+
+git clone <repo-url>
+
+Clone an existing repository.
+
+🎉 Your project is now on GitHub! 🚀

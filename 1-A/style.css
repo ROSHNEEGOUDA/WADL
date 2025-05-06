@@ -1,0 +1,88 @@
+/* Previous CSS remains the same */
+.sidebar {
+    min-height: 100vh;
+    background: linear-gradient(180deg, #2c3e50 0%, #1a2533 100%);
+    padding-top: 20px;
+    position: fixed;
+    width: 250px;
+    transition: all 0.3s;
+}
+
+.sidebar a {
+    color: #fff;
+    padding: 15px 25px;
+    display: block;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.sidebar a:hover {
+    background: rgba(255, 255, 255, 0.1);
+    padding-left: 35px;
+}
+
+.sidebar .active {
+    background: #007bff;
+}
+
+.main-content {
+    margin-left: 250px;
+    padding: 20px;
+    transition: all 0.3s;
+    background: linear-gradient(180deg, #6a7fd0 0%, #3b4b79 100%); /* Gradient background added */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.stat-card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card-icon {
+    font-size: 2.5rem;
+    opacity: 0.2;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+/* New table styles */
+.table-responsive {
+    margin-top: 20px;
+}
+
+.table {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.pagination-controls {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 0;
+        overflow: hidden;
+    }
+    
+    .main-content {
+        margin-left: 0;
+    }
+    
+    .sidebar.active {
+        width: 250px;
+    }
+}
