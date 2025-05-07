@@ -1,0 +1,87 @@
+tools 
+new VM1 Linux ubuntu64 next nxt finish
+use an existing virtual machine
+add + 
+VMDK of ubuntu file
+finish
+
+new VM2
+Add +
+VMDK of ubuntu file already selected finish
+
+file prefrences if not network 
+file tools network manager
+
+NAT networks  create
+
+VM1 settings network NAT Network ok
+VM2 settings network NAT Network ok
+
+VM1 run
+VM2run
+
+VM1 login vagrant
+pwd vagrant
+
+VM2 login vagrant
+pwd vagrant 
+ifconfig
+(notes p address 10.0.2.5)
+
+VM1}
+ifconfig
+ls
+touch rosh.txt
+cat rosh.txt
+nano rosh.txt
+hi there
+ctrl s
+ctrl x
+cat rosh.txt
+scp rosh.txt vagrant@10.0.2.5:/home/vagrant
+yes
+vagrant
+
+VM2}
+ls
+cat rosh.txt
+----------------------------------------
+ #1
+console clous google search
+overview  dashboard
+roshnee  new project  create
+roshnee  prac  touch enabling
+search admin API
+app engine API  enabling touch
+console  continue  authorize
+GitHub repo .git copy
+git clone <paste>
+ls
+cd WADLL
+python fib.py
+{cd\
+rm -rf WADLL
+git clone again}
+--------------------------------
+#2a
+folder should have files like html js
+cd folder path copy
+no read me file no gittone
+git init se
+-----------------------------
+3a
+cd 3-A
+cd node-static-server
+npm install express
+package.jsonscrip:{
+"start":"node server.js"
+npm start
+------------------------
+3b
+cd project 
+npm install
+npm run dev
+cd backend
+npm install
+npm start
+-------------------------
